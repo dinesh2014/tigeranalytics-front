@@ -108,6 +108,7 @@ function ManagementProjects() {
       },
       TransitionComponent: Zoom
     });
+    window.location.reload();
 }, [])
 
   const {
