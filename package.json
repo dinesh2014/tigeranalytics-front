@@ -75,11 +75,12 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "export": "next export",
     "lint": "next lint",
     "lint-fix": "next lint --fix",
-    "format": "prettier --write \"./**/*.{js,jsx,json}\" --config ./.prettierrc"
+    "format": "prettier --write \"./**/*.{js,jsx,json}\" --config ./.prettierrc",
+    "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
     "eslint": "8.17.0",
